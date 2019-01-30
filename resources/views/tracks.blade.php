@@ -16,10 +16,10 @@
       @forelse($tracks as $track)
       <tr>
         <td>
-          {{$track->trackName}}
+           {{$track->Title}}
         </td>
         <td>
-          {{$track->Title}}
+          {{$track->trackName}}
         </td>
         <td>
           {{$track->artistName}}
