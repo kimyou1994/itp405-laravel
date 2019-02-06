@@ -11,6 +11,7 @@
     <tr>
       <th>ID</th>
       <th>Genres</th>
+      <th>Edit</th>
     </tr>
       @foreach($genres as $genre)
       <tr>
@@ -20,6 +21,11 @@
         <td>
           <a href="tracks?genre={{urlencode($genre->Name)}}">
             {{$genre->Name}}
+          </a>
+        </td>
+        <td>
+          <a href="genres/{{$genre->GenreId}}/edit">
+            Edit
           </a>
         </td>
       </tr>

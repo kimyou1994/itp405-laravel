@@ -48,7 +48,6 @@ class TracksController extends Controller
             'byte' => 'required',
             'price' => 'required'
         ]);
-        var_dump($request->album);
         if ($validation->fails()) {
             return redirect('/tracks/new')
             ->withInput()
